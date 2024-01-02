@@ -10,7 +10,7 @@ This directory covers the concept of promises through a series of challenges
 {status: 200, body: success}. When the Promise rejects, return an empty Error object. For every resolution, log Got a response from the API to the console
 * [3-all.js](3-all.js) - In this file, import uploadPhoto and createUser from utils.js. Knowing that the functions in utils.js return promises, use the prototype below to collectively resolve all promises and log body firstName lastName to the console.
 * [4-user-promise.js](4-user-promise.js) - returns a resolved promise with this object: `{ firstName: value, lastName: value }`
-* []() - 
+* [5-photo-reject.js](5-photo-reject.js) - The function should return a Promise rejecting with an Error and the string $fileName cannot be processed
 * []() - 
 * []() - 
 * []() - 
