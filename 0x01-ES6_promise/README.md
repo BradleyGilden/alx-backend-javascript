@@ -11,7 +11,7 @@ This directory covers the concept of promises through a series of challenges
 * [3-all.js](3-all.js) - In this file, import uploadPhoto and createUser from utils.js. Knowing that the functions in utils.js return promises, use the prototype below to collectively resolve all promises and log body firstName lastName to the console.
 * [4-user-promise.js](4-user-promise.js) - returns a resolved promise with this object: `{ firstName: value, lastName: value }`
 * [5-photo-reject.js](5-photo-reject.js) - The function should return a Promise rejecting with an Error and the string $fileName cannot be processed
-* []() - 
+* [6-final-user.js](6-final-user.js) - Write and export a function named handleProfileSignup. It should accept three arguments firstName (string), lastName (string), and fileName (string). The function should call the two other functions. When the promises are all settled it should return an array with the following structure:
 * []() - 
 * []() - 
 * []() - 
