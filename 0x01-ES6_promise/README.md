@@ -12,6 +12,6 @@ This directory covers the concept of promises through a series of challenges
 * [4-user-promise.js](4-user-promise.js) - returns a resolved promise with this object: `{ firstName: value, lastName: value }`
 * [5-photo-reject.js](5-photo-reject.js) - The function should return a Promise rejecting with an Error and the string $fileName cannot be processed
 * [6-final-user.js](6-final-user.js) - Write and export a function named handleProfileSignup. It should accept three arguments firstName (string), lastName (string), and fileName (string). The function should call the two other functions. When the promises are all settled it should return an array with the following structure:
-* []() - 
+* [7-load_balancer.js](7-load_balancer.js) - Write and export a function named loadBalancer. It should accept two arguments chinaDownload (Promise) and USDownload (Promise). The function should return the value returned by the promise that resolved the first.
 * []() - 
 * []() - 
