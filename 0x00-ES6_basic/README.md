@@ -14,9 +14,9 @@ This Directory covers basic ES6 syntax with the use of several challenges given 
 * [7-getBudgetObject.js](7-getBudgetObject.js) - Modify the following function’s budget object to simply use the keyname instead.
 * [8-getBudgetCurrentYear.js](8-getBudgetCurrentYear.js) - Rewrite the `getBudgetForCurrentYear` function to use ES6 computed property names on the budget object
 * [9-getFullBudget.js](9-getFullBudget.js) - modify `getFullBudgetObject` to use ES6 method properties in the fullBudget object
-* [10-loops.js](10-loops.js) - Rewrite the function appendToEachArrayValue to use ES6’s for...of operator. And don’t forget that var is not ES6-friendly.
-* []() -
-* []() -
+* [10-loops.js](10-loops.js) - Rewrite the function `appendToEachArrayValue `to use ES6’s for...of operator. And don’t forget that var is not ES6-friendly.
+* [11-createEmployeesObject.js](11-createEmployeesObject.js) - Write a function named `createEmployeesObject` that will receive two arguments: departmentName (String), employees (Array of Strings)
+* [12-createReportObject.js](12-createReportObject.js) - a function named `createReportObject` whose parameter `employeesList`, is the return value of the previous function `createEmployeesObject`. `createReportObject` should return an object containing the key allEmployees and a method property called `getNumberOfDepartments`. `allEmployees` is a key that maps to an object containing the department name and a list of all the employees in that department. If you’re having trouble, use the spread syntax. The method property receives `employeesList` and returns the number of departments
 * []() -
 * []() -
 * []() -
