@@ -14,5 +14,9 @@ This Directory covers basic ES6 syntax with the use of several challenges given 
 * [7-getBudgetObject.js](7-getBudgetObject.js) - Modify the following function’s budget object to simply use the keyname instead.
 * [8-getBudgetCurrentYear.js](8-getBudgetCurrentYear.js) - Rewrite the `getBudgetForCurrentYear` function to use ES6 computed property names on the budget object
 * [9-getFullBudget.js](9-getFullBudget.js) - modify `getFullBudgetObject` to use ES6 method properties in the fullBudget object
+* [10-loops.js](10-loops.js) - Rewrite the function appendToEachArrayValue to use ES6’s for...of operator. And don’t forget that var is not ES6-friendly.
+* []() -
+* []() -
+* []() -
 * []() -
 * []() -
