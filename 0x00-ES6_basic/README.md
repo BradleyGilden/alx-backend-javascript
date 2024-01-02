@@ -17,6 +17,5 @@ This Directory covers basic ES6 syntax with the use of several challenges given 
 * [10-loops.js](10-loops.js) - Rewrite the function `appendToEachArrayValue `to use ES6’s for...of operator. And don’t forget that var is not ES6-friendly.
 * [11-createEmployeesObject.js](11-createEmployeesObject.js) - Write a function named `createEmployeesObject` that will receive two arguments: departmentName (String), employees (Array of Strings)
 * [12-createReportObject.js](12-createReportObject.js) - a function named `createReportObject` whose parameter `employeesList`, is the return value of the previous function `createEmployeesObject`. `createReportObject` should return an object containing the key allEmployees and a method property called `getNumberOfDepartments`. `allEmployees` is a key that maps to an object containing the department name and a list of all the employees in that department. If you’re having trouble, use the spread syntax. The method property receives `employeesList` and returns the number of departments
-* []() -
-* []() -
-* []() -
+* [100-createIteratorObject.js](100-createIteratorObject.js) -  a function named `createIteratorObject`, that will take into argument a report Object created with the previous function `createReportObject`. This function will return an iterator to go through every employee in every department.
+* [101-iterateThroughObject.js](101-iterateThroughObject.js) - write a function named `iterateThroughObject`. The function’s parameter reportWithIterator is the return value from `createIteratorObject`. It should return every employee name in a string, separated by `|`
