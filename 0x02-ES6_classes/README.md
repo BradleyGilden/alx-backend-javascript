@@ -13,8 +13,9 @@ Each attribute must be stored in an “underscore” attribute version (ex: name
 Implement a getter and setter for each attribute.
 Implement a method named displayFullCurrency that will return the attributes in the following format name (code).
 * [4-pricing.js](4-pricing.js) - Implement a class named Pricing -> Constructor attributes: amount (Number), currency (Currency). Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name) Implement a getter and setter for each attribute. Implement a method named displayFullPrice that returns the attributes in the following format amount currency_name (currency_code). Implement a static method named convertPrice. It should accept two arguments: amount (Number), conversionRate (Number). The function should return the amount multiplied by the conversion rate.
-* []() -
-* []() -
+* [5-building.js](5-building.js) - Constructor attributes: sqft (Number) Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name). Implement a getter for each attribute. Consider this class as an abstract class. And make sure that any class that extends from it should implement a method named evacuationWarningMessage. If a class that extends from it does not have a evacuationWarningMessage method, throw an error with the message Class extending Building must override evacuationWarningMessage
+* [6-sky_high.js](6-sky_high.js) - Implement a class named SkyHighBuilding that extends from Building -> Constructor attributes:
+sqft (Number) (must be assigned to the parent class Building), floors (Number), Each attribute must be stored in an “underscore” attribute, version (ex: name is stored in _name). Implement a getter for each attribute. Override the method named evacuationWarningMessage and return the following string Evacuate slowly the NUMBER_OF_FLOORS floors.
 * []() -
 * []() -
 * []() -
