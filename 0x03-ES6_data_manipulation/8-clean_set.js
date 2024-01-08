@@ -1,17 +1,25 @@
 export default function cleanSet(set, startString) {
-  let endStrLen = 0;
-  const resultList = [];
-  // iterate the set
-  set.forEach((item) => {
-    // && starting avoids empty strings
-    if (item.startsWith(startString) && startString) {
-      // get the length of the remaining string
-      endStrLen = item.length - startString.length;
-      if (!(endStrLen <= 0)) {
-        // push the remaining string into a list if the ending string exists
-        resultList.push(item.slice(startString.length, item.length));
-      }
+  let res = '';
+  if (!startString || !startString.length) return res;
+  for (const el of set) {
+    if (el && el.startsWith(startString)) {
+      res += `${el.slice(startString.length)}-`;
     }
-  });
-  return resultList.join('-');
+  }
+  return res.slice(0, res.length - 1);
 }
+
+// alternate solution
+// export default function cleanSet(set, startString) {
+//   let endStrLen = 0;
+//   const resultList = [];
+//   set.forEach((item) => {
+//     if (item.startsWith(startString) && startString) {
+//       endStrLen = item.length - startString.length;
+//       if (!(endStrLen <= 0)) {
+//         resultList.push(item.slice(startString.length, item.length));
+//       }
+//     }
+//   });
+//   return resultList.join('-');
+// }
