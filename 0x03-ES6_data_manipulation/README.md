@@ -35,7 +35,9 @@
   It should accept a list of students (from getListStudents), a city (String), and newGrades (Array of “grade” objects) as parameters.
   newGrades is an array of objects with this format:
 
-* []() ->
+* [5-typed_arrays.js](5-typed_arrays.js) -> Create a function named createInt8TypedArray that returns a new ArrayBuffer with an Int8 value at a specific position.
+  It should accept three arguments: length (Number), position (Number), and value (Number).
+  If adding the value is not possible the error Position outside range should be thrown.
 
 * []() ->
 
