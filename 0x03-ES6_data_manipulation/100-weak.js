@@ -1,19 +1,11 @@
 const weakMap = new WeakMap();
 
 function queryAPI(endpoint) {
-  // if weakMap object exists
-  if (weakMap.has(endpoint)) {
-    if (weakMap.get(endpoint) >= 5) {
-      throw new Error('Endpoint load is high');
-    } else {
-      let val = weakMap.get(endpoint);
-      val += 1;
-      weakMap.set(endpoint, val);
-    }
-  // if not initialise value to 1
-  } else {
-    weakMap.set(endpoint, 1);
-  }
+  // check for weak map object existence
+  let total = weakMap.get(endpoint) || 0;
+  weakMap.set(endpoint, (total += 1));
+  if (total >= 5) throw new Error('Endpoint load is high');
+  return total;
 }
 
 export { queryAPI, weakMap };
