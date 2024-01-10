@@ -34,7 +34,10 @@ class Teacher implements TeacherInterface {
   }
 }
 
-function createEmployee(salary: number | string): Teacher | Director {
+// define custom type employee as a teacher or directory
+type Employee = Teacher | Director;
+
+function createEmployee(salary: number | string): Employee {
   let adjustedSalary: number;
   if (typeof salary === 'string') {
     // remove currency symbol from string if there is one
@@ -49,3 +52,13 @@ function createEmployee(salary: number | string): Teacher | Director {
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
 console.log(createEmployee('$500'));
+
+// type predicate to check for director
+function isDirector(employee: Employee): employee is Director {
+  return employee instanceof Director;
+}
+
+// execute function depending on object (employee) type
+function executeWork(employee: Employee): void {
+  isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
+}
