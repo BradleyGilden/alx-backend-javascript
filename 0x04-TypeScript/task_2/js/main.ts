@@ -59,6 +59,6 @@ function isDirector(employee: Employee): employee is Director {
 }
 
 // execute function depending on object (employee) type
-function executeWork(employee: Employee): void {
-  isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
+function executeWork(employee: Employee): string {
+  return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
 }
