@@ -62,3 +62,10 @@ function isDirector(employee: Employee): employee is Director {
 function executeWork(employee: Employee): string {
   return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
 }
+
+// literal type for Math and History
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  return todayClass === 'Math' ? 'Teaching Math': 'Teaching History';
+}
