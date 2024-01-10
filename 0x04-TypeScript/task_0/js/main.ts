@@ -42,6 +42,6 @@ studentsList.forEach(student => {
     firstCell.innerHTML = student.firstName;
     secondCell.innerHTML = student.location;
   });
-  
-  table.append(tbody);
-  body.append(table);
+
+table.append(tbody);
+body.append(table);
