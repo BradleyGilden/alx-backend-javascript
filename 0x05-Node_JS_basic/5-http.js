@@ -44,7 +44,7 @@ const app = http.createServer((req, res) => {
         res.end(result);
       })
       .catch((err) => {
-        res.end(String(err));
+        res.end(err.message);
       });
   }
 });
