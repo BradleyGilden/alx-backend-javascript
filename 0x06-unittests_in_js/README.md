@@ -15,6 +15,20 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 # Tasks
 
+* `0-*.js` - Install Mocha using npm:
+
+  * Set up a scripts in your package.json to quickly run Mocha using npm test
+  * You have to use assert
+  * Create a new file named 0-calcul.js:
+  * Create a function named calculateNumber. It should accepts two arguments (number) a and b
+  * The function should round a and b and return the sum of it
+
+  * ### Test cases
+
+    * Create a file 0-calcul.test.js that contains test cases of this function
+    * You can assume a and b are always number
+    * Tests should be around the “rounded” part
+
 * `1-*.js` - Create a new file named 1-calcul.js:
 
   * Upgrade the function you created in the previous task (0-calcul.js)
@@ -28,3 +42,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     * Create a file 1-calcul.test.js that contains test cases of this function
     * You can assume a and b are always number
     * Usage of describe will help you to organize your test cases
+
+* `2-*.js` - Copy the file 1-calcul.js in a new file 2-calcul_chai.js (same content, same behavior)
+  * Copy the file 1-calcul.test.js in a new file 2-calcul_chai.test.js
+  * Rewrite the test suite, using expect from Chai
