@@ -80,3 +80,14 @@ At the end of this project, you are expected to be able to explain to anyone, wi
   * The second test will call sendPaymentRequestToAPI with 10, and 10:
     * Verify that the console is logging the string The total is: 20
     * Verify that the console is only called once
+
+* ### `6-*.js` - Create a new file 6-payment_token.js:
+
+  ### Create a new function named getPaymentTokenFromAPI
+    * The function will take an argument called success (boolean)
+    * When success is true, it should return a resolved promise with the object {data: 'Successful response from the API' }
+    * Otherwise, the function is doing nothing.
+
+  ### Create a new file 6-payment_token.test.js and write a test suite named getPaymentTokenFromAPI
+
+    * How to test the result of getPaymentTokenFromAPI(true)?

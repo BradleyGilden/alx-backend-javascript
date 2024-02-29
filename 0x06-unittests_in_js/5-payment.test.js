@@ -1,6 +1,6 @@
 const { it, describe, beforeEach } = require('mocha');
 const sinon = require('sinon');
-const sendPaymentRequestToApi = require('./3-payment');
+const sendPaymentRequestToApi = require('./5-payment');
 
 describe('sendPaymentRequesToApi', () => {
   describe('Utils.calculateNumber', () => {
