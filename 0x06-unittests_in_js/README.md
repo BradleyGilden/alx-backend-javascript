@@ -71,3 +71,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     * Stub the function Utils.calculateNumber to always return the same number 10
     * Verify that the stub is being called with type = SUM, a = 100, and b = 20
     * Add a spy to verify that console.log is logging the correct message The total is: 10
+
+* ### `5-*.js` - Create a new file 5-payment.test.js:
+  Inside the same describe, create 2 tests:
+  * The first test will call sendPaymentRequestToAPI with 100, and 20:
+    * Verify that the console is only called once
+    * Verify that the console is logging the string The total is: 120
+  * The second test will call sendPaymentRequestToAPI with 10, and 10:
+    * Verify that the console is logging the string The total is: 20
+    * Verify that the console is only called once
