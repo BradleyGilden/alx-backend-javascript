@@ -91,3 +91,8 @@ At the end of this project, you are expected to be able to explain to anyone, wi
   ### Create a new file 6-payment_token.test.js and write a test suite named getPaymentTokenFromAPI
 
     * How to test the result of getPaymentTokenFromAPI(true)?
+
+* ### `7-skp.test.js` - Using the file 7-skip.test.js:
+
+  * Make the test suite pass without fixing or removing the failing test
+  * it description must stay the same
