@@ -15,7 +15,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 # Tasks
 
-* `0-*.js` - Install Mocha using npm:
+* ### `0-*.js` - Install Mocha using npm:
 
   * Set up a scripts in your package.json to quickly run Mocha using npm test
   * You have to use assert
@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     * You can assume a and b are always number
     * Tests should be around the “rounded” part
 
-* `1-*.js` - Create a new file named 1-calcul.js:
+* ### `1-*.js` - Create a new file named 1-calcul.js:
 
   * Upgrade the function you created in the previous task (0-calcul.js)
   * Add a new argument named type at first argument of the function. type can be SUM, SUBTRACT, or DIVIDE (string)
@@ -43,11 +43,11 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     * You can assume a and b are always number
     * Usage of describe will help you to organize your test cases
 
-* `2-*.js` - Copy the file 1-calcul.js in a new file 2-calcul_chai.js (same content, same behavior)
+* ### `2-*.js` - Copy the file 1-calcul.js in a new file 2-calcul_chai.js (same content, same behavior)
   * Copy the file 1-calcul.test.js in a new file 2-calcul_chai.test.js
   * Rewrite the test suite, using expect from Chai
 
-* `3-*.js && utils.js` Let’s install Sinon with npm:
+* ### `3-*.js && utils.js` Let’s install Sinon with npm:
 
   * Create a new file named utils.js
   * Create a new module named Utils
@@ -62,3 +62,12 @@ At the end of this project, you are expected to be able to explain to anyone, wi
   * ### Create a new file named 3-payment.test.js and add a new suite named sendPaymentRequestToApi:
 
     * By using sinon.spy, make sure the math used for sendPaymentRequestToApi(100, 20) is the same as Utils.calculateNumber('SUM', 100, 20) (validate the usage of the Utils function)
+
+* ### `4-*.js` - Create a new file 4-payment.js, and copy the code from 3-payment.js (same content, same behavior)
+
+  * ### Create a new file 4-payment.test.js, and copy the code from 3-payment.test.js
+
+    * Imagine that calling the function Utils.calculateNumber is actually calling an API or a very expensive method. You don’t necessarily want to do that on every test run
+    * Stub the function Utils.calculateNumber to always return the same number 10
+    * Verify that the stub is being called with type = SUM, a = 100, and b = 20
+    * Add a spy to verify that console.log is logging the correct message The total is: 10
