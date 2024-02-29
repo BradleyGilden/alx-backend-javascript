@@ -46,3 +46,19 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * `2-*.js` - Copy the file 1-calcul.js in a new file 2-calcul_chai.js (same content, same behavior)
   * Copy the file 1-calcul.test.js in a new file 2-calcul_chai.test.js
   * Rewrite the test suite, using expect from Chai
+
+* `3-*.js && utils.js` Let’s install Sinon with npm:
+
+  * Create a new file named utils.js
+  * Create a new module named Utils
+  * Create a property named calculateNumber and paste your previous code in the function
+  * Export the Utils module
+
+  * ### Create a new file named 3-payment.js:
+
+    * Create a new function named sendPaymentRequestToApi. The function takes two argument totalAmount, and totalShipping
+    * The function calls the Utils.calculateNumber function with type SUM, totalAmount as a, totalShipping as b and display in the console the message The total is: <result of the sum\>
+
+  * ### Create a new file named 3-payment.test.js and add a new suite named sendPaymentRequestToApi:
+
+    * By using sinon.spy, make sure the math used for sendPaymentRequestToApi(100, 20) is the same as Utils.calculateNumber('SUM', 100, 20) (validate the usage of the Utils function)
