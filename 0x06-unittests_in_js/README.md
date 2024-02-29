@@ -96,3 +96,16 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
   * Make the test suite pass without fixing or removing the failing test
   * it description must stay the same
+
+* ### `8-api` - Create a new file api.js:
+
+  * By using express, create an instance of express called app
+  * Listen to port 7865 and log API available on localhost port 7865 to the browser console when the express server is started
+  * For the route GET /, return the message Welcome to the payment system
+
+  ### Create a new file api.test.js:
+
+  * Create one suite for the index page:
+  * Correct status code?
+  * Correct result?
+  * Other?
