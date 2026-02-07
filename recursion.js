@@ -31,7 +31,6 @@ function reverse(str) {
         return str[i]
     }
     revstr.unshift(rev(str, str.length - 1));
-    \
     return revstr.join('')
 }
 
