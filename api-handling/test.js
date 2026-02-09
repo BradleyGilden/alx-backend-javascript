@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { rqst } from './helper.js'
-import { TOKEN } from './config.js'
+import { TOKEN, ATOKEN } from './config.js'
+import { webhook } from './payload.js'
 
 
 const config = {
@@ -11,16 +12,12 @@ const config = {
 }
 
 const xConfig = {
-    baseURL: 'https://api.xurrent.qa/v1',
+    baseURL: 'https://automator-cl3.techwork.at/webhook/mr-price/sandbox/smartsheets',
     headers: {
         'content-type': 'application/json',
-        'x-xurrent-account': 'helphubtech',
-        'Authorization': TOKEN
+        'Authorization': ATOKEN
     },
-    data: {
-        template: '136007',
-        note: 'request from bot test'
-    }
+    data: webhook
 }
 
 const xConfigGraph = {
@@ -47,9 +44,9 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('post', '', xConfigGraph)
+const res = await rqst('post', '', xConfig)
 console.log(res.status)
 console.log(res.headers)
 console.log(res.data);
-console.log(JSON.stringify(res.data.data.requestCreate.request, null, 2));
+//console.log(JSON.stringify(res.data.data.requestCreate.request, null, 2));
 //console.log(JSON.stringify(res.data.data.requestCreate.errors, null, 2));
