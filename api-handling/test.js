@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { rqst } from './helper.js'
+import { rqst, COLUMN_MAPPING, getCustomFields } from './helper.js'
 import { TOKEN, ATOKEN } from './config.js'
 import { webhook } from './payload.js'
 
@@ -44,9 +44,8 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('post', '', xConfig)
-console.log(res.status)
-console.log(res.headers)
-console.log(res.data);
+const res = await rqst('get', '/getrow/2862041824825220', config);
+const custom_fields = getCustomFields(res.data.cells, COLUMN_MAPPING);
+console.log(custom_fields)
 //console.log(JSON.stringify(res.data.data.requestCreate.request, null, 2));
 //console.log(JSON.stringify(res.data.data.requestCreate.errors, null, 2));

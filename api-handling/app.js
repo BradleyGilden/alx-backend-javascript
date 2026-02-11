@@ -13,6 +13,12 @@ app
 
     const webhookstr = JSON.stringify(webhook);
     res.send(webhookstr);
+}).get('/getrow/:id', (req, res) => {
+    if (req.params.id == 2862041824825220) {
+            res.header('content-type', 'application/json');
+            const ploadstr = JSON.stringify(pload);
+            res.send(pload);
+    } else res.send('req failed');
 })
 
 app.listen(PORT, () => {
