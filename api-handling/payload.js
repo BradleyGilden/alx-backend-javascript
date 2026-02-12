@@ -183,7 +183,9 @@ const pload = {
             "columnId": 4588333845663620
         },
         {
-            "columnId": 2336534031978372
+            "columnId": 2336534031978372,
+            "value": "1000.0",
+            "displayValue": "R1000,00"
         },
         {
             "columnId": 6840133659348868,
@@ -231,7 +233,8 @@ const pload = {
             "columnId": 8528983519612804
         },
         {
-            "columnId": 366209195003780
+            "columnId": 366209195003780,
+            "value": "Samsung A9+ & Accessories"
         },
         {
             "columnId": 4869808822374276,
