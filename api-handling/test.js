@@ -3,6 +3,8 @@ import { rqst, COLUMN_MAPPING, getCustomFields } from './helper.js'
 import { TOKEN, ATOKEN } from './config.js'
 import { webhook, pload } from './payload.js'
 
+const UUID = crypto.randomUUID().replaceAll('-', '')
+
 
 const config = {
     baseURL: 'http://localhost:3000',
@@ -12,10 +14,18 @@ const config = {
 }
 
 const aConfig = {
-    baseURL: 'https://automator-cl3.techwork.at/webhook/mr-price/sandbox/smartsheets',
+    baseURL: 'https://vexall:morpheus@automator-cl3.techwork.at/service/mr-price/sandbox/smartsheets/json/smartsheets',
+    headers: {
+        'content-type': 'application/json'
+    },
+    data: pload
+}
+
+const aHealthCheck = {
+    baseURL: 'https://vexall:morpheus@automator-cl3.techwork.at/service/mr-price/sandbox/smartsheets/json/smartsheets',
     headers: {
         'content-type': 'application/json',
-        'Authorization': ATOKEN
+        'Smartsheet-Hook-Response': UUID
     },
     data: pload
 }
@@ -54,7 +64,9 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('post', '', aConfig);
+const res = await rqst('post', '', aHealthCheck);
 console.log(res.headers, res.data);
+
+res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
 //console.log(JSON.stringify(res.data.data.requestCreate.request, null, 2));
 //console.log(JSON.stringify(res.data.data.requestCreate.errors, null, 2));
