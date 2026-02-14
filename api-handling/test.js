@@ -7,9 +7,10 @@ const UUID = crypto.randomUUID().replaceAll('-', '')
 
 
 const config = {
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://archangelical-mercedez-freakishly.ngrok-free.dev',
     headers: {
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'ngrok-skip-browser-warning': '1'
     }
 }
 
@@ -64,7 +65,7 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('post', '', aHealthCheck);
+const res = await rqst('get', '', config);
 console.log(res.headers, res.data);
 
 res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
