@@ -1,6 +1,11 @@
 import express from 'express'
 import { webhook, pload } from './payload.js';
 
+// To remove this page:
+// Set and send an ngrok-skip-browser-warning request header with any value.
+// Or, set and send a custom/non-standard browser User-Agent request header.
+// Or, please upgrade to any paid ngrok account.
+
 const app = express()
 const PORT = 3000
 
