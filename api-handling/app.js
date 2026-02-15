@@ -7,7 +7,7 @@ import { webhook, pload, pload2 } from './payload.js';
 // Or, please upgrade to any paid ngrok account.
 
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app
 .get('/', (req, res) => {
