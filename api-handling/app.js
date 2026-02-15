@@ -1,5 +1,5 @@
 import express from 'express'
-import { webhook, pload } from './payload.js';
+import { webhook, pload, pload2 } from './payload.js';
 
 // To remove this page:
 // Set and send an ngrok-skip-browser-warning request header with any value.
@@ -18,11 +18,10 @@ app
 
     const webhookstr = JSON.stringify(webhook);
     res.send(webhookstr);
-}).get('/getrow/:id', (req, res) => {
-    if (req.params.id == 2862041824825220) {
-            res.header('content-type', 'application/json');
-            const ploadstr = JSON.stringify(pload);
-            res.send(pload);
+}).get('/sheets/:sheetId/rows/:rowId', (req, res) => {
+    res.header('content-type', 'application/json');
+    if (req.params.sheetId == 1229759569678212) {
+        req.params.rowId == pload.id ? res.send(pload) : res.send(pload2)
     } else res.send('req failed');
 })
 
