@@ -19,7 +19,7 @@ const aConfig = {
     headers: {
         'content-type': 'application/json'
     },
-    data: pload
+    data: webhook
 }
 
 const aHealthCheck = {
@@ -65,9 +65,9 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('get', '', config);
+const res = await rqst('post', '', aConfig);
 console.log(res.headers, res.data);
 
-res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
+//res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
 //console.log(JSON.stringify(res.data.data.requestCreate.request, null, 2));
 //console.log(JSON.stringify(res.data.data.requestCreate.errors, null, 2));
