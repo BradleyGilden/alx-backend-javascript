@@ -1,9 +1,38 @@
 import axios from 'axios'
 import { rqst, COLUMN_MAPPING, getCustomFields } from './helper.js'
-import { TOKEN, ATOKEN } from './config.js'
+//import { TOKEN, ATOKEN } from './config.js'
 import { webhook, pload } from './payload.js'
 
 const UUID = crypto.randomUUID().replaceAll('-', '')
+
+let TOKEN, ATOKEN = ''
+
+const ssheets = {
+    baseURL: 'https://api.smartsheet.com/2.0/webhooks',
+    headers: {
+        'content-type': 'application/json',
+        'Authorization': 'Bearer qJwCyOrWhrQmxCdYY5p4kOpc0M91PtDNamhlt'
+    },
+    data: {
+        "name": "My Specific Sheet Webhook",
+        "scope": "sheet",
+        "scopeObjectId": 5400134671093636,
+        "events": ["*.*"],
+        "callbackUrl": "https://vexall:morpheus@automator-cl3.techwork.at/service/mr-price/sandbox/smartsheets/json/smartsheets",
+        "version": 1
+    }
+}
+
+const ssheets1 = {
+    baseURL: 'https://api.smartsheet.com/2.0/webhooks',
+    headers: {
+        'content-type': 'application/json',
+        'Authorization': 'Bearer qJwCyOrWhrQmxCdYY5p4kOpc0M91PtDNamhlt'
+    },
+    data: {
+        "enabled": true
+    }
+}
 
 
 const config = {
@@ -65,7 +94,7 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('post', '', aConfig);
+const res = await rqst('put', '/3619370669762436', ssheets1);
 console.log(res.headers, res.data);
 
 //res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');

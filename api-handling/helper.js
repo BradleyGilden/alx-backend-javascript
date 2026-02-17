@@ -1,14 +1,21 @@
 import axios from "axios";
+import https from "https";
+
+const myaxios = axios.create({
+httpsAgent: new https.Agent({
+rejectUnauthorized: false
+})
+});
 
 export async function rqst (method, url, config) {
   let res;
-  const methods = ['get', 'post', 'patch', 'delete']
+  const methods = ['get', 'post', 'patch', 'delete', 'put']
   if (methods.includes(method)) {
     if (config.data) {
       const {data, ...mainconfig} = config;
-      res = await axios[method](url, data, mainconfig);
+      res = await myaxios[method](url, data, mainconfig);
     } else {
-      res = await axios[method](url, config);
+      res = await myaxios[method](url, config);
     }
     return res;
   }
