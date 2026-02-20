@@ -24,14 +24,15 @@ const ssheets = {
 }
 
 const ssheets1 = {
-    baseURL: 'https://api.smartsheet.com/2.0/webhooks',
+    baseURL: 'https://api.smartsheet.com/2.0',
     headers: {
         'content-type': 'application/json',
         'Authorization': 'Bearer qJwCyOrWhrQmxCdYY5p4kOpc0M91PtDNamhlt'
-    },
-    data: {
-        "enabled": true
     }
+    // ,
+    // data: {
+    //     "enabled": true
+    // }
 }
 
 
@@ -94,7 +95,7 @@ const xConfigGraph = {
     }
 }
 
-const res = await rqst('put', '/3619370669762436', ssheets1);
+const res = await rqst('get', '/sheets/5400134671093636/rows/4344974086442884?include=discussions,attachments,columns,columnType', ssheets1);
 console.log(res.headers, res.data);
 
 //res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
