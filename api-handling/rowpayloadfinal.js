@@ -913,7 +913,7 @@ const payload =
   ]
 }
 
-const webhook = 
+export const webhook = 
 {
   "nonce": "5c7a379e-2a40-43d8-b52a-08d21907ae21",
   "timestamp": "2026-02-20T12:40:45.637+00:00",
