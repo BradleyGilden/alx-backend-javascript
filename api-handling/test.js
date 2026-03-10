@@ -1,10 +1,12 @@
 import axios from "axios"
 import { rqst, COLUMN_MAPPING, getCustomFields } from "./helper.js"
-import { TOKEN, ATOKEN } from "./config.js"
+// import { TOKEN, ATOKEN } from "./config.js"
 import { webhook } from "./rowpayloadfinal.js"
 import { pload } from "./payload.js"
 
 const UUID = crypto.randomUUID().replaceAll("-", "")
+
+let TOKEN, ATOKEN;
 
 const ssheets = {
   baseURL: "https://api.smartsheet.com/2.0/webhooks",
@@ -96,10 +98,9 @@ const xConfigGraph = {
   },
 }
 //?include=discussions,attachments,columns,columnType
-const res = await rqst("post", "", aConfig)
+const res = await rqst("get", "/sheets/5400134671093636/rows/4344974086442884?include=columns,columnType", ssheets1)
 console.log(res.headers, res.data)
 
 //res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
 //console.log(JSON.stringify(res.data.data.requestCreate.request, null, 2));
 //console.log(JSON.stringify(res.data.data.requestCreate.errors, null, 2));
-

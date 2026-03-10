@@ -1,0 +1,13 @@
+POST https://api.xurrent.qa/v1/requests HTTP/1.1
+content-type: application/json
+authorization: Bearer uWHLnPgfFxDKZPRJ8xUQk0arIVKKZv5TyO6DEpFyXSHfMitsl2TLLl3rbhswiG8SUpouTXgY36gq6m8ANwOyQhLFoHk2z9SmVuoHWfgeVPbOQdij
+x-xurrent-account: helphubtech
+
+{
+    "category": "incident",
+    "impact": "low",
+    "subject": "Automic SSIS Error: RETAILHUB_INVENTORY_SNAPSHOT_MAIN - Status: Failed",
+    "note": "General Automic Request",
+    "service_instance": 237654,
+    "team": 26171
+}
