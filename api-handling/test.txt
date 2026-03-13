@@ -1,288 +1,110 @@
 {
-  "query": {
-    "key": "MRP-102533",
-    "id": "1013584",
-    "prjid": "10066",
-    "prjkey": "MRP",
-    "triggeredByUser": "62c2d4ad66d158d6546e2b87"
-  },
-  "headers": {
-    "host": "automator-bt.techwork.at",
-    "x-real-ip": "10.0.1.192",
-    "x-forwarded-for": "185.166.142.244, 10.0.1.192",
-    "connection": "close",
-    "content-length": "14483",
-    "x-forwarded-proto": "https",
-    "x-forwarded-port": "443",
-    "x-amzn-trace-id": "Root=1-69b00510-4d1268ca006e56fb31192c46",
-    "x-atlassian-webhook-identifier": "7430474918542435690",
-    "x-atlassian-webhook-flow": "Primary",
-    "accept": "*/*",
-    "x-b3-traceid": "1070bef01c98b9bcbb47a6da9ee9823d",
-    "x-b3-spanid": "f9a37b60d90cfa39",
-    "x-b3-sampled": "0",
-    "content-type": "application/json; charset=UTF-8",
-    "user-agent": "Atlassian Webhook HTTP Client",
-    "cookie": "AWSALB=e08U5HnWaC4NhiLekhbBLES1n7cYMKIodkdJwZw8I6qaMFjqRwyaOfmWEEUW3JdQ5GEgheTXzooJc4Le9bxtvFwmUCgiXtZ0vbxaCRHdB2KwKd+ESGq5UPfsXYT6; AWSALBCORS=e08U5HnWaC4NhiLekhbBLES1n7cYMKIodkdJwZw8I6qaMFjqRwyaOfmWEEUW3JdQ5GEgheTXzooJc4Le9bxtvFwmUCgiXtZ0vbxaCRHdB2KwKd+ESGq5UPfsXYT6",
-    "accept-encoding": "gzip,deflate"
-  },
-  "body": {
-    "timestamp": 1773143311590,
-    "webhookEvent": "jira:issue_updated",
-    "issue_event_type_name": "issue_updated",
-    "user": {
-      "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=62c2d4ad66d158d6546e2b87",
-      "accountId": "62c2d4ad66d158d6546e2b87",
+  "timestamp": 1773210175290,
+  "webhookEvent": "comment_created",
+  "comment": {
+    "self": "https://vexall.atlassian.net/rest/api/2/issue/1010574/comment/2215355",
+    "id": "2215355",
+    "author": {
+      "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=5f96bad4c9b15a00789500e9",
+      "accountId": "5f96bad4c9b15a00789500e9",
       "avatarUrls": {
-        "48x48": "https://secure.gravatar.com/avatar/af8be9e40e1e3ded76c48839502b00d0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-2.png",
-        "24x24": "https://secure.gravatar.com/avatar/af8be9e40e1e3ded76c48839502b00d0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-2.png",
-        "16x16": "https://secure.gravatar.com/avatar/af8be9e40e1e3ded76c48839502b00d0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-2.png",
-        "32x32": "https://secure.gravatar.com/avatar/af8be9e40e1e3ded76c48839502b00d0?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FM-2.png"
+        "48x48": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+        "24x24": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+        "16x16": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+        "32x32": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png"
       },
-      "displayName": "Mashudu.Mulaudzi",
+      "displayName": "Pelo",
       "active": true,
       "timeZone": "Africa/Johannesburg",
       "accountType": "atlassian"
     },
-    "issue": {
-      "id": "1013584",
-      "self": "https://vexall.atlassian.net/rest/api/2/issue/1013584",
-      "key": "MRP-102533",
-      "fields": {
-        "statuscategorychangedate": "2026-03-09T08:15:28.433+0200",
-        "customfield_11560": null,
-        "customfield_11683": null,
-        "fixVersions": [],
-        "customfield_11287": {
-          "id": "226",
-          "name": "Service Desk Troubleshooting",
-          "completedCycles": "[ (1 Items) ]",
-          "slaDisplayFormat": "NEW_SLA_FORMAT"
-        },
-        "customfield_11440": {
-          "self": "https://vexall.atlassian.net/rest/api/2/customFieldOption/16363",
-          "value": "Gauteng",
-          "id": "16363"
-        },
-        "statusCategory": {
-          "self": "https://vexall.atlassian.net/rest/api/2/statuscategory/4",
-          "id": 4,
-          "key": "indeterminate",
-          "colorName": "yellow",
-          "name": "In Progress"
-        },
-        "customfield_10111": null,
-        "resolution": null,
-        "customfield_11684": null,
-        "customfield_12897": null,
-        "customfield_11444": null,
-        "customfield_10104": null,
-        "customfield_10105": null,
-        "customfield_10108": {
-          "id": "185",
-          "name": "Time to done",
-          "completedCycles": "[ (0 Items) ]",
-          "ongoingCycle": "{...}",
-          "slaDisplayFormat": "NEW_SLA_FORMAT"
-        },
-        "lastViewed": "2026-03-10T13:43:56.469+0200",
-        "customfield_13690": null,
-        "customfield_11395": [
-          "{...}"
-        ],
-        "customfield_11396": [
-          "{...}"
-        ],
-        "priority": {
-          "self": "https://vexall.atlassian.net/rest/api/2/priority/3",
-          "iconUrl": "https://vexall.atlassian.net/images/icons/priorities/medium_new.svg",
-          "name": "Medium",
-          "id": "3"
-        },
-        "customfield_11035": null,
-        "customfield_11036": null,
-        "customfield_10102": null,
-        "customfield_10982": "Till 4 screen not displaying properly,  Technician replaced screen,  configured settings,  client tested,  all working fine. ",
-        "customfield_10103": [],
-        "labels": [],
-        "customfield_10974": null,
-        "customfield_11029": {
-          "self": "https://vexall.atlassian.net/rest/api/2/customFieldOption/14546",
-          "value": "Hardware",
-          "id": "14546",
-          "child": "{...}"
-        },
-        "customfield_11669": null,
-        "customfield_10975": null,
-        "customfield_10976": null,
-        "aggregatetimeoriginalestimate": null,
-        "timeestimate": null,
-        "customfield_10977": null,
-        "versions": [],
-        "customfield_10978": "74169332",
-        "customfield_12916": "Martin Tshikhuda",
-        "issuelinks": [],
-        "assignee": {
-          "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=62c2d4ad66d158d6546e2b87",
-          "accountId": "62c2d4ad66d158d6546e2b87",
-          "avatarUrls": "{...}",
-          "displayName": "Mashudu.Mulaudzi",
-          "active": true,
-          "timeZone": "Africa/Johannesburg",
-          "accountType": "atlassian"
-        },
-        "status": {
-          "self": "https://vexall.atlassian.net/rest/api/2/status/11063",
-          "description": "",
-          "iconUrl": "https://api-private.atlassian.com/ex/jira/718c21d6-3615-49ef-8874-293e7f225ff1/",
-          "name": "Tech on site (work In Progress)",
-          "id": "11063",
-          "statusCategory": "{...}"
-        },
-        "components": [],
-        "customfield_11380": null,
-        "customfield_11021": null,
-        "customfield_11023": null,
-        "customfield_11024": null,
-        "customfield_10970": "2026-03-10T12:53:00.000+0200",
-        "customfield_13689": null,
-        "customfield_11148": null,
-        "customfield_11027": "2026-03-09T01:00:00.000+0200",
-        "customfield_10962": "2026-03-10T13:24:00.000+0200",
-        "customfield_10963": "369597",
-        "customfield_11019": null,
-        "aggregatetimeestimate": null,
-        "customfield_10966": null,
-        "customfield_10967": "369597",
-        "customfield_10968": null,
-        "customfield_10969": null,
-        "creator": {
-          "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=63db4e8a1b13d42998e1f912",
-          "accountId": "63db4e8a1b13d42998e1f912",
-          "avatarUrls": "{...}",
-          "displayName": "MrPrice",
-          "active": true,
-          "timeZone": "Africa/Johannesburg",
-          "accountType": "atlassian"
-        },
-        "subtasks": [],
-        "reporter": {
-          "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=qm%3Aad6c3f45-f397-4ee7-b875-064c1f3538cc%3Adb69cbba-152e-4f09-a636-34f523d94b37",
-          "accountId": "qm:ad6c3f45-f397-4ee7-b875-064c1f3538cc:db69cbba-152e-4f09-a636-34f523d94b37",
-          "avatarUrls": "{...}",
-          "displayName": "Mr Price Sebokeng (10494)",
-          "active": true,
-          "timeZone": "Africa/Johannesburg",
-          "accountType": "customer"
-        },
-        "customfield_12860": null,
-        "aggregateprogress": {
-          "progress": "0",
-          "total": "0"
-        },
-        "customfield_11652": null,
-        "customfield_10961": "369581",
-        "customfield_10837": [],
-        "progress": {
-          "progress": "0",
-          "total": "0"
-        },
-        "votes": {
-          "self": "https://vexall.atlassian.net/rest/api/2/issue/MRP-102533/votes",
-          "votes": "0",
-          "hasVoted": "false"
-        },
-        "issuetype": {
-          "self": "https://vexall.atlassian.net/rest/api/2/issuetype/10509",
-          "id": "10509",
-          "description": "",
-          "iconUrl": "https://api-private.atlassian.com/ex/jira/718c21d6-3615-49ef-8874-293e7f225ff1/rest/api/2/universal_avatar/view/type/issuetype/avatar/11911?size=medium",
-          "name": "Mr Price Incident",
-          "subtask": "false",
-          "avatarId": 11911,
-          "entityId": "2d761d6b-b792-4964-9de9-1bb6bf51f8e3",
-          "hierarchyLevel": "0"
-        },
-        "timespent": null,
-        "project": {
-          "self": "https://vexall.atlassian.net/rest/api/2/project/10066",
-          "id": "10066",
-          "key": "MRP",
-          "name": "Mr Price ",
-          "projectTypeKey": "service_desk",
-          "simplified": true,
-          "avatarUrls": "{...}",
-          "projectCategory": "{...}"
-        },
-        "customfield_11000": {
-          "id": "197",
-          "name": "Time to First respond",
-          "completedCycles": "[ (1 Items) ]",
-          "slaDisplayFormat": "NEW_SLA_FORMAT"
-        },
-        "aggregatetimespent": null,
-        "customfield_11514": null,
-        "resolutiondate": null,
-        "workratio": -1,
-        "watches": {
-          "self": "https://vexall.atlassian.net/rest/api/2/issue/MRP-102533/watchers",
-          "watchCount": 4,
-          "isWatching": true
-        },
-        "customfield_11190": null,
-        "customfield_11191": null,
-        "customfield_11071": {
-          "self": "https://vexall.atlassian.net/rest/api/2/customFieldOption/14970",
-          "value": "Mr Price",
-          "id": "14970"
-        },
-        "customfield_11192": null,
-        "created": "2026-03-09T07:55:05.452+0200",
-        "customfield_11110": null,
-        "customfield_12832": "A203012174",
-        "updated": "2026-03-10T13:48:31.590+0200",
-        "timeoriginalestimate": null,
-        "customfield_11184": "MRP Sebokeng",
-        "customfield_11185": "Touch screen is damaged",
-        "customfield_12791": null,
-        "description": "[mrpg.4me WhatsappIntegration.sa - 09.03.2026 06:55]\nTech in store: NO\n\nTill 4 screen is dark - Ntombi  - 0825567622 \n\nATTACHMENTS:\n- attach1 - Till 4 screen is dark",
-        "customfield_11066": "10494",
-        "customfield_11068": null,
-        "customfield_11069": null,
-        "customfield_12831": "G223027626",
-        "customfield_10015": null,
-        "customfield_10128": null,
-        "security": null,
-        "attachment": [
-          "{...}"
-        ],
-        "customfield_12828": null,
-        "summary": "[Task 74169332] Touch screen is damaged",
-        "customfield_11172": null,
-        "customfield_14283": null,
-        "customfield_11176": [
-          "{...}"
-        ],
-        "customfield_10002": [],
-        "environment": null,
-        "duedate": null
-      }
+    "body": "Howdy",
+    "updateAuthor": {
+      "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=5f96bad4c9b15a00789500e9",
+      "accountId": "5f96bad4c9b15a00789500e9",
+      "avatarUrls": {
+        "48x48": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+        "24x24": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+        "16x16": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+        "32x32": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png"
+      },
+      "displayName": "Pelo",
+      "active": true,
+      "timeZone": "Africa/Johannesburg",
+      "accountType": "atlassian"
     },
-    "changelog": {
-      "id": "9422394",
-      "items": [
-        {
-          "field": "Call Resolution (RCA)",
-          "fieldtype": "custom",
-          "fieldId": "customfield_10982",
-          "from": "null",
-          "fromString": "null",
-          "to": "",
-          "toString": "Till 4 screen not displaying properly,  Technician replaced screen,  configured settings,  client tested,  all working fine. "
+    "created": "2026-03-11T08:22:55.290+0200",
+    "updated": "2026-03-11T08:22:55.290+0200",
+    "jsdPublic": true
+  },
+  "issue": {
+    "id": "1010574",
+    "self": "https://vexall.atlassian.net/rest/api/2/issue/1010574",
+    "key": "MPQE-212",
+    "fields": {
+      "summary": "Printer Damaged",
+      "issuetype": {
+        "self": "https://vexall.atlassian.net/rest/api/2/issuetype/10549",
+        "id": "10549",
+        "description": "Create a problem to track the cause of one or more incidents.",
+        "iconUrl": "https://vexall.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10304?size=medium",
+        "name": "Mr Price Incident",
+        "subtask": false,
+        "avatarId": 10304,
+        "entityId": "dc34d19a-910d-4d03-866c-422d0954cc72",
+        "hierarchyLevel": 0
+      },
+      "project": {
+        "self": "https://vexall.atlassian.net/rest/api/2/project/10086",
+        "id": "10086",
+        "key": "MPQE",
+        "name": "Mr Price QA Environment ",
+        "projectTypeKey": "service_desk",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://vexall.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10741",
+          "24x24": "https://vexall.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10741?size=small",
+          "16x16": "https://vexall.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10741?size=xsmall",
+          "32x32": "https://vexall.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10741?size=medium"
         }
-      ]
-    },
-    "is_oauth_webhook": false,
-    "is_oauth_verified": false
-  }
+      },
+      "assignee": {
+        "self": "https://vexall.atlassian.net/rest/api/2/user?accountId=5f96bad4c9b15a00789500e9",
+        "accountId": "5f96bad4c9b15a00789500e9",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/a04a483f2586135ba3fb85f8cc15923e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FP-0.png"
+        },
+        "displayName": "Pelo",
+        "active": true,
+        "timeZone": "Africa/Johannesburg",
+        "accountType": "atlassian"
+      },
+      "priority": {
+        "self": "https://vexall.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://vexall.atlassian.net/images/icons/priorities/medium_new.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "status": {
+        "self": "https://vexall.atlassian.net/rest/api/2/status/11266",
+        "description": "The work item is open and ready for the assignee to start work on it.",
+        "iconUrl": "https://vexall.atlassian.net/",
+        "name": "Open",
+        "id": "11266",
+        "statusCategory": {
+          "self": "https://vexall.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      }
+    }
+  },
+  "eventType": "primaryAction",
+  "is_oauth_webhook": false,
+  "is_oauth_verified": false
 }
