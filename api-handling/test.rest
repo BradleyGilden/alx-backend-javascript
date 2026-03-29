@@ -1,13 +1,31 @@
 POST https://api.xurrent.qa/v1/requests HTTP/1.1
 content-type: application/json
-authorization: Bearer uWHLnPgfFxDKZPRJ8xUQk0arIVKKZv5TyO6DEpFyXSHfMitsl2TLLl3rbhswiG8SUpouTXgY36gq6m8ANwOyQhLFoHk2z9SmVuoHWfgeVPbOQdij
+authorization: Bearer t1BUciyNkkJw7dbcEy78Gv0GD3ilW3tHo3eg24bnzm5ud7jScMldzFVdpEBX7wEvnV4EnF8j2oDcp9NBVr278WIhKe9VLAbzGeuncLSVbHLTOF7P
 x-xurrent-account: helphubtech
 
 {
-    "category": "incident",
-    "impact": "low",
-    "subject": "Automic SSIS Error: RETAILHUB_INVENTORY_SNAPSHOT_MAIN - Status: Failed",
-    "note": "General Automic Request",
-    "service_instance": 237654,
-    "team": 26171
+    "service_instance": "244445",
+    "template": "138611",
+    "note": "test incident"
+}
+
+###
+
+GET https://api.xurrent.qa/v1/requests?template=227607&status=assigned HTTP/1.1
+content-type: application/json
+authorization: Bearer t1BUciyNkkJw7dbcEy78Gv0GD3ilW3tHo3eg24bnzm5ud7jScMldzFVdpEBX7wEvnV4EnF8j2oDcp9NBVr278WIhKe9VLAbzGeuncLSVbHLTOF7P
+x-xurrent-account: helphubtech
+
+// O1h3CSfZGLtnTBSOKtigLXyzQpeKpKGzT9iaJrDqVEtyddTWxtBFdQ0ui1oXcwXFt1dt9hywhTgKWcY8ZSqjUFte9WtLjuRMxDXlbEBjLd2fDgQj
+###
+
+PATCH https://api.xurrent.qa/v1/requests/12629365 HTTP/1.1
+content-type: application/json
+authorization: Bearer t1BUciyNkkJw7dbcEy78Gv0GD3ilW3tHo3eg24bnzm5ud7jScMldzFVdpEBX7wEvnV4EnF8j2oDcp9NBVr278WIhKe9VLAbzGeuncLSVbHLTOF7P
+x-xurrent-account: helphubtech
+
+{
+    "status": "completed",
+    "completion_reason": "solved",
+    "note": "Closing Test"
 }

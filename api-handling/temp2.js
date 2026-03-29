@@ -17,9 +17,9 @@ export const webhook = {
     "accountType": "app"
   },
   "issue": {
-    "id": "1010574",
+    "id": "1012121",
     "self": "https://vexall.atlassian.net/rest/api/2/issue/1010574",
-    "key": "MPQE-212",
+    "key": "MPQE-213",
     "fields": {
       "statuscategorychangedate": "2026-03-04T15:36:34.668+0200",
       "issuetype": {

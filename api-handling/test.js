@@ -109,7 +109,7 @@ const xConfigGraph = {
   },
 }
 //?include=discussions,attachments,columns,columnType
-const res = await rqst("get", "/sheets/5400134671093636/rows/7581936318615428?exclude=attachments,discussions,links,nonexistentCells", ssheets1)
+const res = await rqst("post", "", aJiraTest)
 console.log(res.headers, res.data)
 
 //res.data.smartsheetHookResponse === UUID ? console.log('health check succeeded') : console.log('health check failed');
